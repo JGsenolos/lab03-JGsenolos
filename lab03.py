@@ -39,11 +39,8 @@ def reverse_words(sentence):
     #   e.g. "hello world" -> "world hello"
     words = sentence.split()
     reverse = words[::-1]
-    result = ""
-    for word in reverse:
-        result += word + " "
 
-    return result
+    return " ".join(reverse)
 
 
 def letter_counts(text):
